@@ -1,0 +1,5 @@
+# Ignore all .db files
+*.db
+
+# Ignore all .db.wal files
+*.db.wal
