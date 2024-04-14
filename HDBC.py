@@ -6,7 +6,7 @@ import duckdb
 from IPython.display import display
 # %%
 # Initialized duckdb database
-conn = duckdb.connect("HDBC.db")
+conn = duckdb.connect()
 # %%
 # https://duckdb.org/docs/sql/statements/create_table
 # Specify the path containing CSV files
@@ -60,5 +60,24 @@ for table, df in dfs.items():
 # %%
 for table, df in dfs.items():
     conn.execute(f"COPY (SELECT * FROM '{table}.parquet') TO '{table}'")
+
+# %%
+
+# Define the new folder path
+new_folder_path = 'Copy of Datasets/'
+
+# Create the new folder if it doesn't exist
+if not os.path.exists(new_folder_path):
+    os.makedirs(new_folder_path)
+
+# Copy tables to Parquet files
+for table, df in dfs.items():
+    parquet_file_path = os.path.join(new_folder_path, f"{table}.parquet")
+    conn.execute(f"COPY (SELECT * FROM {table}) TO '{parquet_file_path}'")
+# %%
+# Copy Parquet files back to tables
+for table, df in dfs.items():
+    parquet_file_path = os.path.join(new_folder_path, f"{table}.parquet")
+    conn.execute(f"COPY (SELECT * FROM '{parquet_file_path}') TO '{new_folder_path}{table}'")
 
 # %%
