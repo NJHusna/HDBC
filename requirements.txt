@@ -1,0 +1,6 @@
+duckdb==0.10.2
+pandas==2.2.2
+seaborn==0.13.2
+matplotlib==3.8.4
+dbt-CORE==1.7.14
+dbt-duckdb==1.7.4
