@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: hdbc_stag
+    database: hdbc
+    schema: main
+    tables:
+      - name: stag_booking
+      - name: stag_guest
+      - name: stag_cancellation
