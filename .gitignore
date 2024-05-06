@@ -1,5 +1,0 @@
-# Ignore all .db files
-*.duckdb
-
-# Ignore all .db.wal files
-*.duckdb.wal
