@@ -21,12 +21,13 @@ rename_cast AS (
         booking_changes,
         deposit_type,
         days_in_waiting_list,
-        adr as address,
+        adr as "average_daily_rate",
         required_car_parking_spaces,
         total_of_special_requests,
         CAST(company AS VARCHAR) AS company,
         CAST(agent AS VARCHAR) AS agent,
     FROM booking
+    WHERE market_segment <> 'Undefined'
 )
 SELECT 
     *
