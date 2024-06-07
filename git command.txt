@@ -118,4 +118,4 @@ git pull REMOTE
 Step to merge the changes
 git add --all
 git commit -m 'updated the changes'
-git push -all
+git push --all
