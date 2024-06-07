@@ -1,6 +1,6 @@
 # Ignore all .db files
 *.duckdb
-
+git command*.txt
 # Ignore all .db.wal files
 *.duckdb.wal
 *.vscode
