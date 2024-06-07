@@ -3,6 +3,6 @@
 git command*.txt
 # Ignore all .db.wal files
 *.duckdb.wal
-*.vscode
+.vscode/
 hdbc-venv/
 path.ipynb
