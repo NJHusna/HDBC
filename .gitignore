@@ -4,4 +4,4 @@
 # Ignore all .db.wal files
 *.duckdb.wal
 *.vscode
-hdbc-venv
+hdbc-venv/
