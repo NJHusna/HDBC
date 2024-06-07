@@ -1,4 +1,6 @@
 {
-    "dbt.queryLimit": 100,
-    "dbt.enableNewQueryPanel": true
+    "dbt.queryLimit": 200,
+    "dbt.enableNewQueryPanel": true,
+    "dbt.enableNewLineagePanel": true,
+    "dbt.perspectiveTheme": "Vintage"
 }

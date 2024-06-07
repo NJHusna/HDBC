@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 WITH guest AS (
     SELECT *
     FROM {{ source('hdbc_stag', 'stag_guest') }}
@@ -19,6 +21,7 @@ rename_cast AS (
         is_repeated_guest,
         country
     FROM guest
+    WHERE adults <> 0
 )
 SELECT 
     *
