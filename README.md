@@ -4,7 +4,7 @@ Welcome to the Hotel Demand Booking and Cancellation Dashboard project! This pro
 
 ### Explore the Live Dashboard
 
-Experience the Hotel Demand Booking and Cancellation Dashboard in action by visiting this [link]().
+Experience the Hotel Demand Booking and Cancellation Dashboard in action by visiting this [link](https://hdbc.salmonwater-b20202fe.southeastasia.azurecontainerapps.io/).
 
 ### Contributors
 
@@ -34,26 +34,6 @@ _Data Modelling_: Organizing hotel booking data into structured tables for effic
 _Data Transformation_: Employing **dbt** as the transformation framework, including data cleaning, aggregation, and enrichment.
 _Data Warehouse_: Utilizing **DuckDB** as the local data warehouse for fast query performance on analytical workloads.
 _Medallion Framework_: Following the **Databricks medallion framework** to organize data into multiple layers (raw, bronze, silver, and gold) based on its processing stage and quality.
-
-### Requirements
-
-To run the Hotel Demand Booking and Cancellation Dashboard and Data Warehouse locally, you'll need to have the following dependencies installed:
-
-- Python 3.10
-- dbt
-- DuckDB
-- Other necessary Python libraries (specified in requirements.txt)
-
-This repository store the code for
-
-- loading raw dataset
-- data transformation
-
-For data dashboard app repo, please visit [tennis-analytics-app](https://github.com/jhueilim96/tennis-analytics-app).
-
-View dashboard live [here](https://ta-app.ashymeadow-e82ce265.southeastasia.azurecontainerapps.io)
-
-
 
 ### Purpose
 
